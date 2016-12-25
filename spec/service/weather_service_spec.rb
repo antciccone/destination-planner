@@ -6,10 +6,10 @@ describe 'WeatherService' do
 
       weather = WeatherService.new
 
-      expect(weather.weather_by_zip(07871).class).to eq(Array)
-      expect(weather.weather_by_zip(07871).to have_key(:date)
-      expect(weather.weather_by_zip(07871).to have_key(:high)
-      expect(weather.weather_by_zip(07871).to have_key(:low)
+      expect(weather.ten_day_weather_by_zip(31049).class).to eq(Array)
+      expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:date)
+      expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:high)
+      expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:low)
     end
   end
 end

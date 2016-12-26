@@ -13,6 +13,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'faraday'
 gem "figaro"
+gem 'vcr'
+gem 'webmock'
+
 
 group :development, :test do
   gem 'byebug', platform: :mri

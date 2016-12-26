@@ -11,6 +11,12 @@
 # a separate helper file that requires the additional dependencies and performs
 # the additional setup, and require it from the spec files that actually need
 # it.
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.hook_into :webmock # or :fakeweb
+end
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
 # users commonly want.

@@ -15,12 +15,13 @@ gem 'faraday'
 gem "figaro"
 gem 'vcr'
 gem 'webmock'
-
+gem "capybara"
 
 group :development, :test do
   gem 'byebug', platform: :mri
   gem  'rspec-rails'
   gem  'pry'
+  gem 'launchy'
 end
 
 group :development do

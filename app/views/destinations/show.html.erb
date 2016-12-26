@@ -19,7 +19,7 @@
 
   <div class="row">
     <h4>Forecast for <%= @destination.name %>:</h4>
-    
+
   </div>
 
   <div class="row">
@@ -27,3 +27,14 @@
     <%= link_to 'Back', destinations_path %>
   </div>
 </div>
+
+<table>
+  <tr>
+    <th>Weekday</th><th>Month</th><th>Day</th><th>High</th><th>Low</th><th>WeatherConditions</th>
+  </tr>
+  <tr>
+    <% @forcast.each do |forcast| %>
+    <td> <%=forcast.weekday %></td><td><%=forcast.month %></td><td><%=forcast.day %></td><td><%=forcast.high_temp %></td><td><%=forcast.low_temp %></td><td><%=forcast.condition %></td>
+  </tr>
+  <% end %>
+</table>

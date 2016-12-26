@@ -10,7 +10,8 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.json
   def show
-      require "pry"; binding.pry
+    destination = Destination.find(params[:id])
+    @forcast = TenDayWeatherByZip.forcast(destination.zip)
   end
 
   # GET /destinations/new

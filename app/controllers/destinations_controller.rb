@@ -10,6 +10,7 @@ class DestinationsController < ApplicationController
   # GET /destinations/1
   # GET /destinations/1.json
   def show
+      require "pry"; binding.pry
   end
 
   # GET /destinations/new

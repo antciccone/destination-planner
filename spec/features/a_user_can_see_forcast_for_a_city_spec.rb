@@ -13,6 +13,7 @@ describe 'As a user' do
 
         expect(page).to have_content("Sparta")
         expect(page).to have_content("07871")
+        expect(page).to have_content("childhood home")
         expect(page).to have_content("High")
         expect(page).to have_content("Low")
         expect(page).to have_content("Day")

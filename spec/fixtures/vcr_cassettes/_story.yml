@@ -25,27 +25,27 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Last-Modified:
-      - Tue, 27 Dec 2016 21:03:26 GMT
+      - Tue, 27 Dec 2016 21:22:16 GMT
       Server:
       - Apache/2.2.15 (CentOS)
       X-Creationtime:
-      - '0.044'
+      - '0.041'
       Vary:
       - Accept-Encoding
       Expires:
-      - Tue, 27 Dec 2016 21:03:26 GMT
+      - Tue, 27 Dec 2016 21:22:16 GMT
       Cache-Control:
       - max-age=0, no-cache
       Pragma:
       - no-cache
       Date:
-      - Tue, 27 Dec 2016 21:03:26 GMT
+      - Tue, 27 Dec 2016 21:22:16 GMT
       Content-Length:
       - '18537'
       Connection:
       - keep-alive
       Set-Cookie:
-      - DT=1482872606:2623:ip-10-226-236-16; path=/; expires=Fri, 01-Jan-2020 00:00:00
+      - DT=1482873736:13087:ip-10-226-236-16; path=/; expires=Fri, 01-Jan-2020 00:00:00
         GMT; domain=.wunderground.com
       - Prefs=FAVS:1|WXSN:1|PWSOBS:1|WPHO:1|PHOT:1|RADC:0|RADALL:0|HIST0:NULL|GIFT:1|PHOTOTHUMBS:50|EXPFCT:1|;
         path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT; domain=.wunderground.com
@@ -243,5 +243,5 @@ http_interactions:
         282\n\t\t},\n\t\t\"avehumidity\": 55,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
         0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
     http_version: 
-  recorded_at: Tue, 27 Dec 2016 21:03:28 GMT
+  recorded_at: Tue, 27 Dec 2016 21:22:16 GMT
 recorded_with: VCR 3.0.3

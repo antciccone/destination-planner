@@ -26,15 +26,17 @@
     <%= link_to 'Edit', edit_destination_path(@destination) %> |
     <%= link_to 'Back', destinations_path %>
   </div>
-</div>
+  <div class="row">
 
-<table>
-  <tr>
-    <th>Weekday</th><th>Month</th><th>Day</th><th>High</th><th>Low</th><th>WeatherConditions</th>
-  </tr>
-  <tr>
-    <% @forcast.each do |forcast| %>
-    <td> <%=forcast.weekday %></td><td><%=forcast.month %></td><td><%=forcast.day %></td><td><%=forcast.high_temp %></td><td><%=forcast.low_temp %></td><td><%=forcast.condition %></td>
-  </tr>
-  <% end %>
-</table>
+    <table>
+      <tr>
+        <th>Weekday</th><th>Month</th><th>Day</th><th>High</th><th>Low</th><th>WeatherConditions</th>
+      </tr>
+      <tr>
+        <% @forcast.each do |forcast| %>
+        <td> <%=forcast.weekday %></td><td><%=forcast.month %></td><td><%=forcast.day %></td><td><%=forcast.high_temp %></td><td><%=forcast.low_temp %></td><td><%=forcast.condition %></td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

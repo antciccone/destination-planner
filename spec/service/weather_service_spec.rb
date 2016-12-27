@@ -11,6 +11,7 @@ describe 'WeatherService' do
         expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:date)
         expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:high)
         expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:low)
+        expect(weather.ten_day_weather_by_zip(31049).first).to have_key(:conditions)
       end
     end
   end

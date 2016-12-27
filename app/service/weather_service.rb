@@ -14,7 +14,8 @@ class WeatherService
   def json_parse(json)
     JSON.parse(json, symbolize_names: true)
   end
+
   private
 
-  attr_reader :conn
+    attr_reader :conn
 end

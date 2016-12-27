@@ -39,6 +39,7 @@ describe 'all destinations endpoint' do
     expect(response.status).to eq(201)
     expect(destination['name']).to eq("Sparta")
     expect(destination['description']).to eq("childhood home")
+    expect(destination['zip']).to eq("07871")
     expect(destination['image_url']).to eq("http://www.scottolson.us/mohawk/lm12.jpg")
   end
 end

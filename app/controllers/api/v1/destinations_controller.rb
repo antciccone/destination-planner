@@ -9,6 +9,7 @@ class Api::V1::DestinationsController < ApplicationController
   end
 
   def create
+    require "pry"; binding.pry
     @destination = Destination.new(destination_params)
     if @destination.save
       render json: @destination, status: 201

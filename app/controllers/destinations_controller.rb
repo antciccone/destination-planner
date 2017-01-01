@@ -11,7 +11,7 @@ class DestinationsController < ApplicationController
   # GET /destinations/1.json
   def show
     destination = Destination.find(params[:id])
-    @forcast = TenDayWeatherByZip.forcast(destination.zip)
+    @forcast = Forcast.forcast(destination.zip)
   end
 
   # GET /destinations/new

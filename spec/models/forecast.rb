@@ -1,10 +1,10 @@
 require 'rails_helper'
-describe 'TenDayWeatherByZip' do
+describe 'Forcast' do
   context '.tendayforcast' do
     it 'returns an array of weather forcast by zip' do
       VCR.use_cassette("#forcast") do
 
-        weather = TenDayWeatherByZip.forcast(31049)
+        weather = Forcast.forcast(31049)
         weather = weather.first
 
         expect(weather).to respond_to(:high_temp)

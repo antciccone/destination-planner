@@ -1,4 +1,4 @@
-class TenDayWeatherByZip
+class Forcast
 
   attr_reader :weekday, :month, :day, :high_temp, :low_temp, :condition
 
@@ -13,7 +13,7 @@ class TenDayWeatherByZip
 
   def self.forcast(zipcode)
     WeatherService.new.ten_day_weather_by_zip(zipcode).map do |raw_data|
-      TenDayWeatherByZip.new(raw_data)
+      Forcast.new(raw_data)
     end
   end
 end

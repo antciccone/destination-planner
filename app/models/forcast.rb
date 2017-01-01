@@ -11,7 +11,7 @@ class Forcast
     @condition = service[:conditions]
   end
 
-  def self.forcast(zipcode)
+  def self.ten_day(zipcode)
     WeatherService.new.ten_day_weather_by_zip(zipcode).map do |raw_data|
       Forcast.new(raw_data)
     end

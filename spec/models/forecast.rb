@@ -4,7 +4,7 @@ describe 'Forcast' do
     it 'returns an array of weather forcast by zip' do
       VCR.use_cassette("#forcast") do
 
-        weather = Forcast.forcast(31049)
+        weather = Forcast.ten_day(31049)
         weather = weather.first
 
         expect(weather).to respond_to(:high_temp)

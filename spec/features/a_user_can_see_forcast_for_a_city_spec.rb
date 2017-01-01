@@ -19,6 +19,12 @@ describe 'As a user' do
         expect(page).to have_content("Day")
         expect(page).to have_content("Month")
         expect(page).to have_content("Conditions")
+        expect(page).to have_content("Monday")
+        expect(page).to have_content("Tuesday")
+        expect(page).to have_content("Wednesday")
+        expect(page).to have_content("Thursday")
+        expect(page).to have_content("Friday")
+        expect(page).to have_content("Saturday")
       end
     end
   end

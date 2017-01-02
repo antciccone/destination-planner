@@ -20,9 +20,16 @@ class Api::V1::DestinationsController < ApplicationController
   def update
     @destination = Destination.find(params[:id])
     if @destination.update(destination_params)
-      render json: @destination, status: 204
+      render json: @destination, status: 200
     else
       "you are missing required info"
+    end
+  end
+
+  def destroy
+    @destination = Destination.find(params[:id])
+    if @destination.destroy
+      render json:  "destination destroyed"
     end
   end
 

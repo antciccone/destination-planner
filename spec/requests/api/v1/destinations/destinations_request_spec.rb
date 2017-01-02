@@ -50,11 +50,15 @@ describe 'all destinations endpoint' do
     put "/api/v1/destinations/#{destination1.id}", destination: destination_params
     destination = Destination.last
 
-    expect(response.status).to eq(204)
+    expect(response.status).to eq(200)
     expect(destination.zip).to eq("07872")
   end
 
-  it "can destroy a destination"
+  it "can destroy a destination" do
+    destination1 = Destination.create(name: "Sparta", zip: "07871", description: "childhood home", image_url: "http://www.scottolson.us/mohawk/lm12.jpg")
 
-  end 
+    delete "/api/v1/destinations/#{destination1.id}"
+
+    expect(response.status).to eq(200)
+  end
 end

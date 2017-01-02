@@ -51,6 +51,10 @@ describe 'all destinations endpoint' do
     destination = Destination.last
 
     expect(response.status).to eq(204)
-
+    expect(destination.zip).to eq("07872")
   end
+
+  it "can destroy a destination"
+
+  end 
 end

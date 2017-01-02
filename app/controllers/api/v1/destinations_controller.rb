@@ -17,6 +17,14 @@ class Api::V1::DestinationsController < ApplicationController
     end
   end
 
+  def update
+    @destination = Destination.find(params[:id])
+    if @destination.update(destination_params)
+      render json: @destination, status: 204
+    else
+      "you are missing required info"
+    end
+  end
 
 
   def destination_params

@@ -42,4 +42,15 @@ describe 'all destinations endpoint' do
     expect(destination['zip']).to eq("07871")
     expect(destination['image_url']).to eq("http://www.scottolson.us/mohawk/lm12.jpg")
   end
+
+  it 'can creatae a destination' do
+    destination1 = Destination.create(name: "Sparta", zip: "07871", description: "childhood home", image_url: "http://www.scottolson.us/mohawk/lm12.jpg")
+    destination_params = {name: "Sparta", zip: "07872", description: "childhood home", image_url: "http://www.scottolson.us/mohawk/lm12.jpg"}
+
+    put "/api/v1/destinations/#{destination1.id}", destination: destination_params
+    destination = Destination.last
+
+    expect(response.status).to eq(204)
+
+  end
 end
